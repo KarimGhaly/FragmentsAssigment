@@ -1,0 +1,49 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.fragmentsassigment.DetailsFragment">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+    <!-- TODO: Update blank fragment layout -->
+    <GridLayout
+        android:columnCount="2"
+        android:rowCount="2"
+        android:layout_margin="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/DetailsImgView"
+            android:layout_height="120dp"
+            android:layout_width="120dp"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:layout_rowSpan="2"
+            />
+        <TextView
+            android:id="@+id/DetailsTxtName"
+            android:padding="10dp"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+        <TextView
+            android:id="@+id/DetailsTxtAge"
+            android:layout_column="1"
+            android:padding="10dp"
+            android:layout_row="1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/DetailsTxtDesc"
+        android:padding="15dp"
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"/>
+    </LinearLayout>
+</FrameLayout>
